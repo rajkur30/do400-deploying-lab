@@ -41,7 +41,7 @@ pipeline {
            steps {
               sh """
                   oc set image deployment home-automation \
-                  home-automation=quay.io/${QUAY_USR}/do400-deploying-lab:build-${BUILD_NUMBER} \
+                  home-automation=quay.io/${QUAY_USR}/do400-deploying-lab:build-3 \
                   -n tpzivz-deploying-lab-test --record
                 """
             }
